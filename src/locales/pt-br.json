@@ -1,0 +1,18 @@
+{
+  "lang": "pt-BR",
+  "subtitle": "Eu crio experiências digitais acessíveis e pixel perfect para a web.",
+  "label": {
+    "about": "SOBRE",
+    "formation": "FORMAÇÃO",
+    "experience": "EXPERIÊNCIA"
+  },
+  "about": {
+    "footer_title": "CONHECIMENTOS PRINCIPAIS",
+    "main_section": "Sou um desenvolvedor de software com mais de 4 anos de experiência em JavaScript, TypeScript, ReactJS, NextJS e React Native. Sou um entusiasta da utilização de Inteligência artificial para desenvolvimento e comecei meus estudos na área este ano.",
+    "footer_section": "Tenho paixão por criar produtos que os usuários amam, tanto como profissão quanto como hobby. Sou um profissional versátil, com habilidades de comunicação em português e inglês, e familiaridade com metodologias ágeis."
+  },
+  "experience": {
+    "footer_title": "EXTRA",
+    "footer_content": "· Construí funcionalidades semelhantes às de redes sociais como Instagram, LinkedIn, WhatsApp e Facebook, utilizando 100% React Native. · Realizei upgrades de projetos obsoletos utilizando os frameworks ReactJS e React Native."
+  }
+}

@@ -1,26 +1,212 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --breakpoint-lg: 64.5rem;
 }
+
+:root {
+  --background: #260c3b;
+  --foreground: #2f023c;
+  --primary: #e3dce9;
+  --secondary: #bbb5c1;
+  --tertiary: #9e99a4;
+  --hover: #3f3f3f;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2F023C;
+    --foreground: #00323733;
+    --primary: #E3DCE9;
+    --secondary: #BBB5C1;
+    --tertiary: #9E99A4;
+  }
+} */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+
+  --color-hover: var(--hover);
+
+  --font-grenze: var(--font-grenze);
+
+  --shadow-board: 1px 2px 2px 1px #0000000d;
+
+  --shadow-main-board: 4px 18px 16px 2px #0000000d;
+  --shadow-footer-board: 2px 4px 16px 0px #0000000d;
+
+  --center-rotate: calc(50vh + 2.5rem);
+  --horizontal-size: calc(100vh - 5rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.grenze-extralight {
+  font-family: "Grenze", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.grenze-light {
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.grenze-regular {
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grenze-medium {
+  font-family: "Grenze", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.grenze-semibold {
+  font-family: "Grenze", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.grenze-bold {
+  font-family: "Grenze", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  background: var(--background);
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.125rem;
+
+  ::-webkit-scrollbar {
+    background: var(--background);
+    border-radius: 100vw;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border-radius: 100vw;
+  }
+  ::-moz-scrollbar {
+    background: var(--foreground);
+    border-radius: 100vw;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  ::-moz-scrollbar-thumb {
+    background: var(--tertiary);
+    border-radius: 100vw;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Grenze", Arial, Helvetica, sans-serif;
+
+  color: var(--primary);
+}
+
+h1 {
+  font-family: "Grenze";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4rem;
+
+  color: var(--primary);
+}
+
+h2 {
+  font-family: "Grenze";
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.25rem;
+
+  color: var(--primary);
+}
+
+article {
+  font-family: "Grenze";
+
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+
+  color: var(--secondary);
+}
+
+h3 {
+  font-family: "Grenze";
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+
+  color: var(--primary);
+}
+
+h4 {
+  font-family: "Grenze";
+
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-wrap: nowrap;
+
+  color: var(--primary);
+}
+
+h5 {
+  font-family: "Grenze";
+
+  color: var(--secondary);
+
+  width: 100%;
+}
+
+span {
+  font-family: "Grenze";
+
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+
+  color: var(--secondary);
+}
+
+time {
+  font-family: "Grenze";
+
+  line-height: 1.125rem;
+
+  color: var(--tertiary);
+}
+
+.overflow_opacity {
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 100vw;
+  }
+
+  ::-moz-scrollbar-thumb {
+    background: transparent;
+    border-radius: 100vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 12px;
+  }
 }
