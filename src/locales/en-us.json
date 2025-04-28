@@ -1,6 +1,6 @@
 {
   "lang": "en-US",
-  "subtitle": "I create accessible, pixel-perfect digital experiences for the web.",
+  "subtitle": "I create accessible, pixel-perfect digital experiences for web and mobile.",
   "label": {
     "about": "ABOUT",
     "formation": "FORMATION",
@@ -8,11 +8,11 @@
   },
   "about": {
     "footer_title": "MAIN SKILLS",
-    "main_section": "I'm a software developer with over 4 years of experience in JavaScript, TypeScript, ReactJS, NextJS and React Native. I'm an enthusiast of using Artificial Intelligence for development and started my studies in the area this year.",
-    "footer_section": "I am passionate about creating products that users love, both as a profession and as a hobby. I am a versatile professional, with communication skills in Portuguese and English, and familiarity with agile methodologies."
+    "main_section": "I am a software developer with over 4 years of experience in ReactJS, NextJS and React Native. I am an Artificial Intelligence enthusiast and I am constantly learning its languages, applications and features.",
+    "footer_section": "I am passionate about creating products that provide great user experiences and have a positive impact on them, which motivates me to expand my horizons. I am a versatile professional, with communication skills in Portuguese and English, and familiarity with agile methodologies AGILE and SCRUM."
   },
   "experience": {
     "footer_title": "EXTRA",
-    "footer_content": "· I built features similar to those of social networks such as Instagram, LinkedIn, WhatsApp and Facebook, using 100% React Native. · I upgraded obsolete projects using the ReactJS and React Native frameworks."
+    "footer_content": "· I built features similar to social networks such as Instagram, LinkedIn, Twitter and Facebook, using 100% React Native. · I upgraded obsolete projects in the ReactJS and React Native frameworks."
   }
 }

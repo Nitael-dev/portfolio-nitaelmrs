@@ -3,11 +3,11 @@ import { ExperienceProps, FormationDataProps } from "@shared/interfaces";
 export const Formations: FormationDataProps[] = [
   {
     alt: "Ignite_2023 logo",
-    category: ["ReactJS", "React Native", "NextJS", "NodeJS"],
+    category: ["ReactJS", "React Native", "NextJS", "NodeJS", "IA"],
     content:
-      "Desenvolvimento de aplicações do zero, utilizando diferentes frameworks, bibliotecas e recursos, em experiências práticas que refletem o mercado de trabalho.",
+      "Bootcamp com tecnologias atualizadas, tendo o mesmo objetivo do anterior. Dividido em trilhas, este curso traz os fundamentos do anterior, novos recursos, propostas e aplicações de soluções com uma forma de ensino aprimorada.",
     content_en:
-      "Development of applications from scratch, using different frameworks, libraries and resources, in practical experiences that reflect the job market.",
+      "Bootcamp with updated technologies, with the same objective as the previous one. Divided into tracks, this course brings the fundamentals of the previous one, new resources, proposals and applications of solutions with an improved teaching method.",
     src: "/ignite_2023.jpg",
     title: "Rocketseat Ignite - 2023",
   },
@@ -15,9 +15,9 @@ export const Formations: FormationDataProps[] = [
     alt: "Ignite_2021 logo",
     category: ["ReactJS", "React Native", "NextJS", "NodeJS"],
     content:
-      "Desenvolvimento de aplicações do zero, utilizando diversos frameworks, bibliotecas e recursos, em experiências práticas voltadas para o mercado de trabalho.",
+      "64h+ De bootcamp com foco em desenvolver aplicações do zero, utilizando diferentes frameworks, bibliotecas e recursos. Separado por trilhas de conhecimento, este curso tem como foco ensinar os alicerces e aplica-los, tendo experiências práticas que refletem o mercado de trabalho.",
     content_en:
-      "Development of applications from scratch, using different frameworks, libraries and resources, in practical experiences aimed at the job market.",
+      "64h+ Of bootcamp focused on developing applications from scratch, using different frameworks, libraries and resources. Separated by knowledge paths, this course focuses on teaching the foundations and applying them, having practical experiences that reflect the job market.",
     src: "/ignite_2021.jpg",
     title: "Rocketseat Ignite - 2021",
   },
@@ -25,9 +25,9 @@ export const Formations: FormationDataProps[] = [
     alt: "Go_Stack logo",
     category: ["ReactJS", "React Native", "NodeJS", "Redux"],
     content:
-      "Desenvolvimento de aplicações do zero, utilizando diversos frameworks, bibliotecas e recursos, em experiências práticas voltadas para o mercado de trabalho.",
+      "100h+ Bootcamp intensivo focado em desenvolver aplicações completas no ecossistema JavaScript. Com sistema de trilhas por tecnologia, este curso ensina a criar e integrar front-ends e back-ends JavaScript, em aplicações completas, além de deploys, testes automatizados e gerenciadores de estado.",
     content_en:
-      "Development of applications from scratch, using different frameworks, libraries and resources, in practical experiences aimed at the job market.",
+      "100h+ Intensive bootcamp focused on developing complete applications in the JavaScript ecosystem. With a technology-based path system, this course teaches how to create and integrate JavaScript front-ends and back-ends into complete applications, as well as deployments, automated tests, and state managers.",
     src: "/go_stack.jpg",
     title: "Rocketseat GoStack - 2021",
   },
@@ -35,9 +35,9 @@ export const Formations: FormationDataProps[] = [
     alt: "Code_Boost logo",
     category: ["HTML5", "CSS3", "JavaScript", "SASS", "ReactJS", "NextJS"],
     content:
-      "Introdução a tecnologias base para criação de páginas Web, ambiente de desenvolvimento e frameworks, tendo como foco a criação de layouts de páginas Web.",
+      "Curso de introdução a tecnologias base para criação de páginas Web, ambiente de desenvolvimento e frameworks, tendo como foco a criação de layouts de páginas Web.",
     content_en:
-      "Introduction to basic technologies for creating web pages, development environment and frameworks, focusing on creating web page layouts.",
+      "Introductory course on basic technologies for creating web pages, development environment and frameworks, focusing on creating web page layouts.",
     src: "/code_boost.jpg",
     title: "Code Boost - 2021",
   },
@@ -103,8 +103,8 @@ export const Experiences: ExperienceProps[] = [
     },
     title: "Junior Front-end Developer - Okaydev Tecnologia",
     content:
-      "Desenvolvimento de aplicações Web utilizando: HTML5, CSS3 e JavaScript, frameworks baseadas em JavaScript como ReactJS e WordPress",
+      "Imersão de desenvolvimento durante os primeiros 6 meses até ser efetivado, onde pude ter meu primeiro contato com projetos e soluções de peso. Desenvolvimento de plataformas Web(SPA's), integrações e landing pages, utilizando frameworks como ReactJS e React Native, WordPress, HTML5, CSS3, SASS, Javaccript e Typescript.",
     content_en:
-      "Web application development using: HTML5, CSS3 and JavaScript, JavaScript-based frameworks such as ReactJS and WordPress",
+      "Development immersion during the first 6 months until being hired, where I was able to have my first contact with major projects and solutions. Development of Web platforms (SPA's), integrations and landing pages, using frameworks such as ReactJS and React Native, WordPress, HTML5, CSS3, SASS, Javascript and Typescript.",
   },
 ];

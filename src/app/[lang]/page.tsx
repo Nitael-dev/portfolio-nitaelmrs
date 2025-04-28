@@ -2,7 +2,7 @@
 import { AnchorSelection } from "@shared/components/anchor_selection";
 import { Divider } from "@shared/components/divider";
 import { FormationCard } from "@shared/components/formation_card";
-import { Experiences, Formations } from "@shared/mock/formations";
+import { Experiences, Formations } from "@shared/mock";
 import { About } from "@shared/sections/about";
 import { Knowledge } from "@shared/sections/knowledge";
 import { useEffect, useLayoutEffect, useMemo, useState } from "react";
@@ -34,6 +34,7 @@ export default function Home({
       setTimeout(() => setSelected(null), 1);
       setSelected(undefined);
     } else {
+      if (showScroll === false) return;
       setTimeout(() => setSelected(index), 1);
       switch (index) {
         case "about":
@@ -119,6 +120,7 @@ export default function Home({
         handleSelected(anchor ?? null);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selected]);
 
   useLayoutEffect(() => {
@@ -162,20 +164,21 @@ export default function Home({
             width={selected ? "w-full lg:w-[65%]" : "w-0"}
             className={`transition-[width]`}
           />
+
           <Knowledge
             title={dict.about.footer_title}
             content=" · Stacks: Git(GitHub, GitLab, BitBucket), Docker, JavaScript,
               TypeScript, Tailwind, Bootstrap, ReactJS, React Native, NextJS,
               NodeJS, Flutter, Dart, Jest, Cypress, CI/CD, PostgreSQL, MySQL,
               GraphQL, Apollo Client, Redux."
-            className={`transition-all duration-500 mt-14 ${
+            className={`transition-all absolute top-[18.35rem] lg:static lg:mt-14 lg:top-none duration-500 ${
               selected === "about"
                 ? "z-1"
                 : "-z-10 opacity-0 -translate-y-18 lg:translate-x-18 lg:translate-y-0"
             }`}
           />
           <div
-            className={`flex h-fit w-full absolute top-[18rem] mx-auto lg:mx-0 lg:w-[85%] transition-all duration-500 ${
+            className={`flex h-fit w-full lg:absolute lg:top-[18rem] mt-9 lg:mt-0 mx-auto lg:mx-0 lg:w-[85%] transition-all duration-500 ${
               selected === "formation"
                 ? "z-1"
                 : "-z-10 opacity-0 -translate-y-18 lg:translate-y-0 lg:translate-x-18"
@@ -210,7 +213,7 @@ export default function Home({
             <>
               <About
                 dict={dict}
-                className={`absolute top-2 lg:top-0 transition-all duration-500 pb-8 lg:pb-0 lg:ml-4 ${
+                className={`absolute top-4 lg:top-0 transition-all duration-500 pb-8 lg:pb-0 lg:ml-4 ${
                   selected === "about"
                     ? "z-1"
                     : "-z-1 opacity-0 -translate-y-18"
