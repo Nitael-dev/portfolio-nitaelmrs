@@ -142,13 +142,15 @@ export default function Home({
       <main
         className={`flex flex-col lg:flex-row px-4 sm:px-0 ${
           showScroll === null || !selected
-            ? "overflow-y-hidden overflow_opacity"
+            ? "overflow-y-hidden overflow_opacity lg:overflow-y-hidden"
             : showScroll === false
-            ? "overflow_opacity"
+            ? "overflow_opacity lg:overflow-y-hidden"
             : "overflow-y-none"
-        } lg:overflow-y-none w-full h-full justify-between`}
+        } w-full h-fit justify-between`}
       >
-        <section className={`flex flex-col lg:flex-1 relative lg:mb-8`}>
+        <section
+          className={`flex flex-col lg:w-full lg:h-full relative lg:mb-8`}
+        >
           <Divider width="w-full lg:w-[65%]" />
           <AnchorSelection
             dict={dict}
@@ -166,14 +168,14 @@ export default function Home({
               TypeScript, Tailwind, Bootstrap, ReactJS, React Native, NextJS,
               NodeJS, Flutter, Dart, Jest, Cypress, CI/CD, PostgreSQL, MySQL,
               GraphQL, Apollo Client, Redux."
-            className={`transition-all mt-14 duration-500 absolute top-[15rem] ${
+            className={`transition-all duration-500 mt-14 ${
               selected === "about"
                 ? "z-1"
                 : "-z-10 opacity-0 -translate-y-18 lg:translate-x-18 lg:translate-y-0"
             }`}
           />
           <div
-            className={`flex h-fit w-full mt-12 mx-auto lg:mx-0 lg:w-[85%] transition-all duration-500 ${
+            className={`flex h-fit w-full absolute top-[18rem] mx-auto lg:mx-0 lg:w-[85%] transition-all duration-500 ${
               selected === "formation"
                 ? "z-1"
                 : "-z-10 opacity-0 -translate-y-18 lg:translate-y-0 lg:translate-x-18"
@@ -198,17 +200,17 @@ export default function Home({
           />
         </section>
         <section
-          className={`flex flex-col flex-1 overflow-y-none ${
+          className={`flex flex-col w-full overflow-y-none ${
             !showScroll || !selected ? "overflow_opacity" : ""
           } ${
             selected === "about" ? "lg:overflow-y-none" : "lg:overflow-y-scroll"
-          } max-h-dvh h-full items-start lg:items-end relative`}
+          } h-full items-start lg:items-end relative`}
         >
           {selected !== "" && (
             <>
               <About
                 dict={dict}
-                className={`absolute lg:top-0 transition-all duration-500 pb-8 lg:ml-4 ${
+                className={`absolute top-2 lg:top-0 transition-all duration-500 pb-8 lg:pb-0 lg:ml-4 ${
                   selected === "about"
                     ? "z-1"
                     : "-z-1 opacity-0 -translate-y-18"
@@ -217,7 +219,7 @@ export default function Home({
               <>
                 <StickyCard
                   show={selected === "formation"}
-                  className="w-(--sticky-formation) self-start hidden top-0 -mt-3.5 lg:ml-4 lg:mr-4 xl:block"
+                  className="w-(--sticky-formation) self-start hidden top-0 -mt-3.5 lg:mx-4 xl:block"
                 >
                   <FormationCard
                     locale={dict.lang as Locale}
@@ -229,7 +231,7 @@ export default function Home({
               <>
                 <StickyCard
                   show={selected === "experience"}
-                  className="w-11/12 top-0 self-start hidden lg:self-auto lg:right-0 xl:block"
+                  className="w-(--sticky-formation) self-start hidden top-0 -mt-3.5 lg:mx-4 xl:block"
                 >
                   <ExperienceCard
                     locale={dict.lang as Locale}
