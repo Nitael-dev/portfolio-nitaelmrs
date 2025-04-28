@@ -13,7 +13,7 @@ export function FormationList({ dict, selected }: FormationListProps) {
   return (
     <div
       id="formation-list"
-      className={`flex flex-col pb-4.5 pr-4 lg:px-4 gap-4 absolute transition-all duration-500 top-4 lg:top-0 ${
+      className={`flex flex-col pb-4.5 pr-4 lg:px-4 gap-4 absolute transition-all duration-500 top-15.5 lg:top-0 ${
         selected === "formation" ? "z-1" : "-z-1 opacity-0 -translate-y-18"
       }`}
     >
