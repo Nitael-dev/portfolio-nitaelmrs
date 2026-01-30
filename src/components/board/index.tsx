@@ -12,7 +12,7 @@ export function Board({ text, type, className = "" }: BoardProps) {
       case "article":
         return <article>{text}</article>;
       case "content":
-        return <span>{text}</span>;
+        return <span className="whitespace-pre-wrap">{text}</span>;
       case "highlight":
         return <h4>{text}</h4>;
     }
